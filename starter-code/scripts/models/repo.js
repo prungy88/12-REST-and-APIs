@@ -13,9 +13,10 @@
       type: 'GET',
       headers: {'Authorization': 'token ' + githubToken},
       success: function(data) {
-        data.forEach(function(a) {
-          repos.allRepos.push(a);
-        });
+        repos.allRepos = data;
+        // data.forEach(function(a) {
+        //   repos.allRepos.push(a);
+        // });
         callback();
       }
     });

@@ -3,10 +3,7 @@
   /* TODO: Let's compile our new handlebars template!
            Save the result of invoking Handlebars in this 'repoCompiler' variable
            that we will pass to the append method below. */
-  var repoCompiler = function(r) {
-    var template = Handlebars.compile($('#repo-template').text());
-    return template(r);
-  };
+  var repoCompiler = Handlebars.compile($('#repo-template').text());
  //Finish the Handlebars method here!
 
   //logic to append the data
