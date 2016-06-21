@@ -8,7 +8,6 @@
   repos.requestRepos = function(callback) {
     /* TODO: How would you like to fetch your repos? Someone say AJAX?
       Do not forget to call the callback. Be careful to wait until the repos are requested, before you call callback function (which will actually render to page) */
-    console.log('test');
     $.ajax({
       url: 'https://api.github.com/users/prungy88/repos',
       type: 'GET',

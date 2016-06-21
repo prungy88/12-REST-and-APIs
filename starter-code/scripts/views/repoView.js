@@ -4,7 +4,6 @@
            Save the result of invoking Handlebars in this 'repoCompiler' variable
            that we will pass to the append method below. */
   var repoCompiler = function(r) {
-    // console.log(Handlebars.compile($('#repo-template'));
     var template = Handlebars.compile($('#repo-template').text());
     return template(r);
   };
@@ -13,7 +12,6 @@
   //logic to append the data
 
   repoView.renderRepos = function() {
-    // console.log();
     $('#about ul').empty().append(
       repos.withTheAttribute('name') //TODO: experiment changing this attribute field, to see how it alters your collection
       .map(repoCompiler)
